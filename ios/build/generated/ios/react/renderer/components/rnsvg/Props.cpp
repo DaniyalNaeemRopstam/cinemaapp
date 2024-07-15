@@ -101,7 +101,6 @@ RNSVGCircleProps::RNSVGCircleProps(
     strokeMiterlimit(convertRawProp(context, rawProps, "strokeMiterlimit", sourceProps.strokeMiterlimit, {0.0})),
     vectorEffect(convertRawProp(context, rawProps, "vectorEffect", sourceProps.vectorEffect, {0})),
     propList(convertRawProp(context, rawProps, "propList", sourceProps.propList, {})),
-    filter(convertRawProp(context, rawProps, "filter", sourceProps.filter, {})),
     cx(convertRawProp(context, rawProps, "cx", sourceProps.cx, {})),
     cy(convertRawProp(context, rawProps, "cy", sourceProps.cy, {})),
     r(convertRawProp(context, rawProps, "r", sourceProps.r, {}))
@@ -136,7 +135,6 @@ RNSVGClipPathProps::RNSVGClipPathProps(
     strokeMiterlimit(convertRawProp(context, rawProps, "strokeMiterlimit", sourceProps.strokeMiterlimit, {0.0})),
     vectorEffect(convertRawProp(context, rawProps, "vectorEffect", sourceProps.vectorEffect, {0})),
     propList(convertRawProp(context, rawProps, "propList", sourceProps.propList, {})),
-    filter(convertRawProp(context, rawProps, "filter", sourceProps.filter, {})),
     fontSize(convertRawProp(context, rawProps, "fontSize", sourceProps.fontSize, {})),
     fontWeight(convertRawProp(context, rawProps, "fontWeight", sourceProps.fontWeight, {})),
     font(convertRawProp(context, rawProps, "font", sourceProps.font, {}))
@@ -189,38 +187,10 @@ RNSVGEllipseProps::RNSVGEllipseProps(
     strokeMiterlimit(convertRawProp(context, rawProps, "strokeMiterlimit", sourceProps.strokeMiterlimit, {0.0})),
     vectorEffect(convertRawProp(context, rawProps, "vectorEffect", sourceProps.vectorEffect, {0})),
     propList(convertRawProp(context, rawProps, "propList", sourceProps.propList, {})),
-    filter(convertRawProp(context, rawProps, "filter", sourceProps.filter, {})),
     cx(convertRawProp(context, rawProps, "cx", sourceProps.cx, {})),
     cy(convertRawProp(context, rawProps, "cy", sourceProps.cy, {})),
     rx(convertRawProp(context, rawProps, "rx", sourceProps.rx, {})),
     ry(convertRawProp(context, rawProps, "ry", sourceProps.ry, {}))
-      {}
-RNSVGFeColorMatrixProps::RNSVGFeColorMatrixProps(
-    const PropsParserContext &context,
-    const RNSVGFeColorMatrixProps &sourceProps,
-    const RawProps &rawProps): ViewProps(context, sourceProps, rawProps),
-
-    x(convertRawProp(context, rawProps, "x", sourceProps.x, {})),
-    y(convertRawProp(context, rawProps, "y", sourceProps.y, {})),
-    width(convertRawProp(context, rawProps, "width", sourceProps.width, {})),
-    height(convertRawProp(context, rawProps, "height", sourceProps.height, {})),
-    result(convertRawProp(context, rawProps, "result", sourceProps.result, {})),
-    in1(convertRawProp(context, rawProps, "in1", sourceProps.in1, {})),
-    type(convertRawProp(context, rawProps, "type", sourceProps.type, {RNSVGFeColorMatrixType::Matrix})),
-    values(convertRawProp(context, rawProps, "values", sourceProps.values, {}))
-      {}
-RNSVGFilterProps::RNSVGFilterProps(
-    const PropsParserContext &context,
-    const RNSVGFilterProps &sourceProps,
-    const RawProps &rawProps): ViewProps(context, sourceProps, rawProps),
-
-    name(convertRawProp(context, rawProps, "name", sourceProps.name, {})),
-    x(convertRawProp(context, rawProps, "x", sourceProps.x, {})),
-    y(convertRawProp(context, rawProps, "y", sourceProps.y, {})),
-    height(convertRawProp(context, rawProps, "height", sourceProps.height, {})),
-    width(convertRawProp(context, rawProps, "width", sourceProps.width, {})),
-    filterUnits(convertRawProp(context, rawProps, "filterUnits", sourceProps.filterUnits, {RNSVGFilterFilterUnits::ObjectBoundingBox})),
-    primitiveUnits(convertRawProp(context, rawProps, "primitiveUnits", sourceProps.primitiveUnits, {RNSVGFilterPrimitiveUnits::UserSpaceOnUse}))
       {}
 RNSVGForeignObjectProps::RNSVGForeignObjectProps(
     const PropsParserContext &context,
@@ -252,7 +222,6 @@ RNSVGForeignObjectProps::RNSVGForeignObjectProps(
     strokeMiterlimit(convertRawProp(context, rawProps, "strokeMiterlimit", sourceProps.strokeMiterlimit, {0.0})),
     vectorEffect(convertRawProp(context, rawProps, "vectorEffect", sourceProps.vectorEffect, {0})),
     propList(convertRawProp(context, rawProps, "propList", sourceProps.propList, {})),
-    filter(convertRawProp(context, rawProps, "filter", sourceProps.filter, {})),
     fontSize(convertRawProp(context, rawProps, "fontSize", sourceProps.fontSize, {})),
     fontWeight(convertRawProp(context, rawProps, "fontWeight", sourceProps.fontWeight, {})),
     font(convertRawProp(context, rawProps, "font", sourceProps.font, {})),
@@ -291,7 +260,6 @@ RNSVGGroupProps::RNSVGGroupProps(
     strokeMiterlimit(convertRawProp(context, rawProps, "strokeMiterlimit", sourceProps.strokeMiterlimit, {0.0})),
     vectorEffect(convertRawProp(context, rawProps, "vectorEffect", sourceProps.vectorEffect, {0})),
     propList(convertRawProp(context, rawProps, "propList", sourceProps.propList, {})),
-    filter(convertRawProp(context, rawProps, "filter", sourceProps.filter, {})),
     fontSize(convertRawProp(context, rawProps, "fontSize", sourceProps.fontSize, {})),
     fontWeight(convertRawProp(context, rawProps, "fontWeight", sourceProps.fontWeight, {})),
     font(convertRawProp(context, rawProps, "font", sourceProps.font, {}))
@@ -326,7 +294,6 @@ RNSVGImageProps::RNSVGImageProps(
     strokeMiterlimit(convertRawProp(context, rawProps, "strokeMiterlimit", sourceProps.strokeMiterlimit, {0.0})),
     vectorEffect(convertRawProp(context, rawProps, "vectorEffect", sourceProps.vectorEffect, {0})),
     propList(convertRawProp(context, rawProps, "propList", sourceProps.propList, {})),
-    filter(convertRawProp(context, rawProps, "filter", sourceProps.filter, {})),
     x(convertRawProp(context, rawProps, "x", sourceProps.x, {})),
     y(convertRawProp(context, rawProps, "y", sourceProps.y, {})),
     width(convertRawProp(context, rawProps, "width", sourceProps.width, {})),
@@ -407,7 +374,6 @@ RNSVGLineProps::RNSVGLineProps(
     strokeMiterlimit(convertRawProp(context, rawProps, "strokeMiterlimit", sourceProps.strokeMiterlimit, {0.0})),
     vectorEffect(convertRawProp(context, rawProps, "vectorEffect", sourceProps.vectorEffect, {0})),
     propList(convertRawProp(context, rawProps, "propList", sourceProps.propList, {})),
-    filter(convertRawProp(context, rawProps, "filter", sourceProps.filter, {})),
     x1(convertRawProp(context, rawProps, "x1", sourceProps.x1, {})),
     y1(convertRawProp(context, rawProps, "y1", sourceProps.y1, {})),
     x2(convertRawProp(context, rawProps, "x2", sourceProps.x2, {})),
@@ -443,7 +409,6 @@ RNSVGMarkerProps::RNSVGMarkerProps(
     strokeMiterlimit(convertRawProp(context, rawProps, "strokeMiterlimit", sourceProps.strokeMiterlimit, {0.0})),
     vectorEffect(convertRawProp(context, rawProps, "vectorEffect", sourceProps.vectorEffect, {0})),
     propList(convertRawProp(context, rawProps, "propList", sourceProps.propList, {})),
-    filter(convertRawProp(context, rawProps, "filter", sourceProps.filter, {})),
     fontSize(convertRawProp(context, rawProps, "fontSize", sourceProps.fontSize, {})),
     fontWeight(convertRawProp(context, rawProps, "fontWeight", sourceProps.fontWeight, {})),
     font(convertRawProp(context, rawProps, "font", sourceProps.font, {})),
@@ -490,7 +455,6 @@ RNSVGMaskProps::RNSVGMaskProps(
     strokeMiterlimit(convertRawProp(context, rawProps, "strokeMiterlimit", sourceProps.strokeMiterlimit, {0.0})),
     vectorEffect(convertRawProp(context, rawProps, "vectorEffect", sourceProps.vectorEffect, {0})),
     propList(convertRawProp(context, rawProps, "propList", sourceProps.propList, {})),
-    filter(convertRawProp(context, rawProps, "filter", sourceProps.filter, {})),
     fontSize(convertRawProp(context, rawProps, "fontSize", sourceProps.fontSize, {})),
     fontWeight(convertRawProp(context, rawProps, "fontWeight", sourceProps.fontWeight, {})),
     font(convertRawProp(context, rawProps, "font", sourceProps.font, {})),
@@ -499,8 +463,7 @@ RNSVGMaskProps::RNSVGMaskProps(
     height(convertRawProp(context, rawProps, "height", sourceProps.height, {})),
     width(convertRawProp(context, rawProps, "width", sourceProps.width, {})),
     maskUnits(convertRawProp(context, rawProps, "maskUnits", sourceProps.maskUnits, {0})),
-    maskContentUnits(convertRawProp(context, rawProps, "maskContentUnits", sourceProps.maskContentUnits, {0})),
-    maskType(convertRawProp(context, rawProps, "maskType", sourceProps.maskType, {0}))
+    maskContentUnits(convertRawProp(context, rawProps, "maskContentUnits", sourceProps.maskContentUnits, {0}))
       {}
 RNSVGPathProps::RNSVGPathProps(
     const PropsParserContext &context,
@@ -532,7 +495,6 @@ RNSVGPathProps::RNSVGPathProps(
     strokeMiterlimit(convertRawProp(context, rawProps, "strokeMiterlimit", sourceProps.strokeMiterlimit, {0.0})),
     vectorEffect(convertRawProp(context, rawProps, "vectorEffect", sourceProps.vectorEffect, {0})),
     propList(convertRawProp(context, rawProps, "propList", sourceProps.propList, {})),
-    filter(convertRawProp(context, rawProps, "filter", sourceProps.filter, {})),
     d(convertRawProp(context, rawProps, "d", sourceProps.d, {}))
       {}
 RNSVGPatternProps::RNSVGPatternProps(
@@ -565,7 +527,6 @@ RNSVGPatternProps::RNSVGPatternProps(
     strokeMiterlimit(convertRawProp(context, rawProps, "strokeMiterlimit", sourceProps.strokeMiterlimit, {0.0})),
     vectorEffect(convertRawProp(context, rawProps, "vectorEffect", sourceProps.vectorEffect, {0})),
     propList(convertRawProp(context, rawProps, "propList", sourceProps.propList, {})),
-    filter(convertRawProp(context, rawProps, "filter", sourceProps.filter, {})),
     fontSize(convertRawProp(context, rawProps, "fontSize", sourceProps.fontSize, {})),
     fontWeight(convertRawProp(context, rawProps, "fontWeight", sourceProps.fontWeight, {})),
     font(convertRawProp(context, rawProps, "font", sourceProps.font, {})),
@@ -640,7 +601,6 @@ RNSVGRectProps::RNSVGRectProps(
     strokeMiterlimit(convertRawProp(context, rawProps, "strokeMiterlimit", sourceProps.strokeMiterlimit, {0.0})),
     vectorEffect(convertRawProp(context, rawProps, "vectorEffect", sourceProps.vectorEffect, {0})),
     propList(convertRawProp(context, rawProps, "propList", sourceProps.propList, {})),
-    filter(convertRawProp(context, rawProps, "filter", sourceProps.filter, {})),
     x(convertRawProp(context, rawProps, "x", sourceProps.x, {})),
     y(convertRawProp(context, rawProps, "y", sourceProps.y, {})),
     height(convertRawProp(context, rawProps, "height", sourceProps.height, {})),
@@ -678,7 +638,6 @@ RNSVGSymbolProps::RNSVGSymbolProps(
     strokeMiterlimit(convertRawProp(context, rawProps, "strokeMiterlimit", sourceProps.strokeMiterlimit, {0.0})),
     vectorEffect(convertRawProp(context, rawProps, "vectorEffect", sourceProps.vectorEffect, {0})),
     propList(convertRawProp(context, rawProps, "propList", sourceProps.propList, {})),
-    filter(convertRawProp(context, rawProps, "filter", sourceProps.filter, {})),
     fontSize(convertRawProp(context, rawProps, "fontSize", sourceProps.fontSize, {})),
     fontWeight(convertRawProp(context, rawProps, "fontWeight", sourceProps.fontWeight, {})),
     font(convertRawProp(context, rawProps, "font", sourceProps.font, {})),
@@ -719,7 +678,6 @@ RNSVGTextProps::RNSVGTextProps(
     strokeMiterlimit(convertRawProp(context, rawProps, "strokeMiterlimit", sourceProps.strokeMiterlimit, {0.0})),
     vectorEffect(convertRawProp(context, rawProps, "vectorEffect", sourceProps.vectorEffect, {0})),
     propList(convertRawProp(context, rawProps, "propList", sourceProps.propList, {})),
-    filter(convertRawProp(context, rawProps, "filter", sourceProps.filter, {})),
     fontSize(convertRawProp(context, rawProps, "fontSize", sourceProps.fontSize, {})),
     fontWeight(convertRawProp(context, rawProps, "fontWeight", sourceProps.fontWeight, {})),
     font(convertRawProp(context, rawProps, "font", sourceProps.font, {})),
@@ -765,7 +723,6 @@ RNSVGTextPathProps::RNSVGTextPathProps(
     strokeMiterlimit(convertRawProp(context, rawProps, "strokeMiterlimit", sourceProps.strokeMiterlimit, {0.0})),
     vectorEffect(convertRawProp(context, rawProps, "vectorEffect", sourceProps.vectorEffect, {0})),
     propList(convertRawProp(context, rawProps, "propList", sourceProps.propList, {})),
-    filter(convertRawProp(context, rawProps, "filter", sourceProps.filter, {})),
     fontSize(convertRawProp(context, rawProps, "fontSize", sourceProps.fontSize, {})),
     fontWeight(convertRawProp(context, rawProps, "fontWeight", sourceProps.fontWeight, {})),
     font(convertRawProp(context, rawProps, "font", sourceProps.font, {})),
@@ -817,7 +774,6 @@ RNSVGTSpanProps::RNSVGTSpanProps(
     strokeMiterlimit(convertRawProp(context, rawProps, "strokeMiterlimit", sourceProps.strokeMiterlimit, {0.0})),
     vectorEffect(convertRawProp(context, rawProps, "vectorEffect", sourceProps.vectorEffect, {0})),
     propList(convertRawProp(context, rawProps, "propList", sourceProps.propList, {})),
-    filter(convertRawProp(context, rawProps, "filter", sourceProps.filter, {})),
     fontSize(convertRawProp(context, rawProps, "fontSize", sourceProps.fontSize, {})),
     fontWeight(convertRawProp(context, rawProps, "fontWeight", sourceProps.fontWeight, {})),
     font(convertRawProp(context, rawProps, "font", sourceProps.font, {})),
@@ -864,7 +820,6 @@ RNSVGUseProps::RNSVGUseProps(
     strokeMiterlimit(convertRawProp(context, rawProps, "strokeMiterlimit", sourceProps.strokeMiterlimit, {0.0})),
     vectorEffect(convertRawProp(context, rawProps, "vectorEffect", sourceProps.vectorEffect, {0})),
     propList(convertRawProp(context, rawProps, "propList", sourceProps.propList, {})),
-    filter(convertRawProp(context, rawProps, "filter", sourceProps.filter, {})),
     href(convertRawProp(context, rawProps, "href", sourceProps.href, {})),
     x(convertRawProp(context, rawProps, "x", sourceProps.x, {})),
     y(convertRawProp(context, rawProps, "y", sourceProps.y, {})),

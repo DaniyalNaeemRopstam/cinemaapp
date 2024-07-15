@@ -5,7 +5,11 @@ export default {
   tabsColor:'#EEEEF2',
   white: "#ffff",
   purple:'#564CA3',
-
+  listContainer:'#F6F6FA',
+  action:'#15D2BC',
+  thriller:'#E26CA5',
+  science:'#564CA3',
+  fiction:'#CD9D0F',
 
   
   tabInactive:'#716c6a',

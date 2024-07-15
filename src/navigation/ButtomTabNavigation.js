@@ -5,6 +5,9 @@ import Icon from 'react-native-vector-icons/FontAwesome';
 import StackNavigator from './StackNavigator'; // Import the StackNavigator
 import CinemaHallDetailScreen from '../screens/CinemaHallDetailScreen';
 import CinemaHallListingScreen from '../screens/CinemaHallListingScreen';
+import MovieDetailScreen from '../screens/MovieDetailScreen';
+import colors from '../assets/config/colors';
+import { HP } from '../assets/config/space';
 
 const Tab = createBottomTabNavigator();
 
@@ -22,6 +25,7 @@ export const MyTabs = () => {
           borderTopStartRadius: 30,
           padding: 10,
         },
+        tabBarActiveTintColor:colors.white
       })}
     >
       <Tab.Screen
@@ -56,6 +60,8 @@ export const MyTabs = () => {
           tabBarIcon: ({ color }) => <Icon name="list-ul" color={color} size={26} />,
         }}
       />
+
+
     </Tab.Navigator>
   );
 };

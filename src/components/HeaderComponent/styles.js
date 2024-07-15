@@ -1,4 +1,4 @@
-import { StyleSheet } from "react-native";
+import { Platform, StyleSheet } from "react-native";
 import { WP, HP, mvs } from '../../assets/config/space';
 import colors from '../../assets/config/colors';
 import Fonts from '../../assets/config/fontFamily';
@@ -12,7 +12,7 @@ const styles = StyleSheet.create({
       paddingBottom:WP(2),
       backgroundColor:colors.transparent,
       position:'relative',
-
+      
     },
     leftIconContainer: {
       padding:WP(2),
@@ -26,10 +26,10 @@ const styles = StyleSheet.create({
     },
     rightIconContainer: {
         position:'absolute',
-        padding:WP(2),
-        top:WP(1),
+        // padding:WP(2),
+        top:Platform.OS === 'android' ? WP(1) : WP(0)  ,
         right:WP(3),
-        zIndex:1
+        zIndex:1,
     },
     dotContainer:{
         position:'absolute',

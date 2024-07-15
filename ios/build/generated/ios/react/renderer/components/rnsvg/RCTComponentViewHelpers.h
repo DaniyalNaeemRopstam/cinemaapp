@@ -29,14 +29,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 @end
 
-@protocol RCTRNSVGFeColorMatrixViewProtocol <NSObject>
-
-@end
-
-@protocol RCTRNSVGFilterViewProtocol <NSObject>
-
-@end
-
 @protocol RCTRNSVGForeignObjectViewProtocol <NSObject>
 
 @end
