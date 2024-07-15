@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View, Alert, TouchableOpacity, Dimensions, FlatList } from 'react-native';
+import { StyleSheet, Text, View, Alert, TouchableOpacity, Dimensions, FlatList, ScrollView } from 'react-native';
 import React, { useRef, useState } from 'react';
 import MainLayout from '../layouts/MainLayout';
 import colors from '../assets/config/colors';
@@ -93,6 +93,7 @@ const CinemaHallDetailScreen = () => {
                 onLeftIconPress={() => { }}
                 containerStyle={styles.header}
             />
+            <ScrollView>
             <View style={styles.container}>
                 <View style={styles.container2}>
                     <Animated.View style={styles.zoomableView}>
@@ -150,6 +151,7 @@ const CinemaHallDetailScreen = () => {
 
                 </View>
             </View>
+            </ScrollView>
         </MainLayout>
     );
 };

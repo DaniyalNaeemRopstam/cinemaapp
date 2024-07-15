@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View, Alert } from 'react-native'
+import { StyleSheet, Text, View, Alert, ScrollView } from 'react-native'
 import React, { useEffect, useState } from 'react'
 import MainLayout from '../layouts/MainLayout'
 import colors from '../assets/config/colors'
@@ -9,6 +9,7 @@ import { CustomButton } from '../components/uiComps/CustomButton'
 import { WP, mvs } from '../assets/config/space'
 import SliderDateComponent from '../components/SliderDateComponent/SliderDateComponent'
 import SeatSelectionListingComponent from '../components/SeatSelectionListingComponent/SeatSelectionListingComponent'
+import { useNavigation } from '@react-navigation/native';
 
 const CinemaHallListingScreen = () => {
   const dates = getWeekDates()
@@ -19,14 +20,14 @@ const CinemaHallListingScreen = () => {
     setSelectedHall(null)
   }, [selectedDateTabs])
 
-
+  const navigation = useNavigation();
   const handleNavigation = ()=>{
     if(selectedHall === null){
       Alert.alert("Info","Please select hall first");
       return 
     }
     
-    console.log("navigation")
+    navigation.navigate('Media Library');
   }
 
   return (
@@ -40,6 +41,7 @@ const CinemaHallListingScreen = () => {
         containerStyle={styles.header}
       />
 
+    <ScrollView>
       <View style={styles.container}>
         <Text style={styles.datesTitle}>Date</Text>
 
@@ -65,6 +67,7 @@ const CinemaHallListingScreen = () => {
           onPress={handleNavigation}
         />
       </View>
+      </ScrollView>
     </MainLayout>
   )
 }
@@ -82,7 +85,8 @@ const styles = StyleSheet.create({
   datesTitle: {
     fontSize: mvs(16),
     paddingHorizontal: WP(4),
-    fontWeight: '500'
+    fontWeight: '500',
+    marginTop:50
   },
   buttonContainer: {
     paddingHorizontal: WP(4)
